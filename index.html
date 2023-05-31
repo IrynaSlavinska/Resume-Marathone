@@ -4,106 +4,180 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>My resume</title>
   </head>
   <body>
-    <header>
-      <h3>Front-End Developer</h3>
-      <h1>Iryna Slavinska</h1>
-      <p>About me text</p>
-    </header>
-    <main>
-      <!-- Section My Projects -->
-      <section>
-        <h2>Projects</h2>
-        <ol>
-          <li>
-            <a href="https://hellen.p.goit.global/"
-              >https://hellen.p.goit.global/</a
+    <!-------------------- WRAPPER --------------------->
+    <div class="wrapper">
+      <!-------------------- MAIN CONTENT --------------------->
+      <div class="main-content">
+        <!-------------------- ABOUT ME --------------------->
+        <div>
+          <h2 class="my-profession">Front-End Developer</h2>
+          <h1>Iryna Slavinska</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+        </div>
+        <!-------------------- PROJECTS --------------------->
+        <div>
+          <h3>Projects</h3>
+          <ol>
+            <li class="project-item">
+              <a href="https://hellen.p.goit.global/"
+                >https://hellen.p.goit.global/</a
+              >.............................[ HTML5, CSS3 ]
+            </li>
+            <li class="project-item">
+              <a href="https://cryptohub.p.goit.global/"
+                >https://cryptohub.p.goit.global/</a
+              >.............................[ JavaScript ]
+            </li>
+            <li class="project-item">
+              <a href="https://kidslike.p.goit.global/"
+                >https://kidslike.p.goit.global/</a
+              >.............................[ React.js, Node.js ]
+            </li>
+          </ol>
+        </div>
+        <!-------------------- WORK EXSPERIENCE --------------------->
+        <div>
+          <h3>Work Experience</h3>
+          <!-- Company 1 -->
+          <div>
+            <h4>Front-End Developer</h4>
+            <p>Freelance September 2019 - up to now | Country</p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Risus commodo viverra maecenas.</li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </li>
+            </ul>
+          </div>
+          <!-- Company 2 -->
+          <div>
+            <h4>Manager Banderogusak & Co.</h4>
+            <p>March 2015 - October 2018 | Country</p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod labore et dolore magna aliqua.
+              </li>
+              <li>Quis ipsum suspendisse ultrices gravida.</li>
+              <li>Risus commodo viverra maecenas.</li>
+            </ul>
+          </div>
+          <!-- Company 3 -->
+          <div>
+            <h4>Manager BestUA Corp.</h4>
+            <p>June 2014 - February 2015 | Country</p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod labore et dolore magna aliqua.
+              </li>
+              <li>Quis ipsum suspendisse ultrices gravida.</li>
+              <li>Risus commodo viverra maecenas.</li>
+            </ul>
+          </div>
+        </div>
+        <!----------------------- EDUCATION --------------------->
+        <div>
+          <h3>Education</h3>
+          <h4>National University of Management</h4>
+          <h5>Management</h5>
+          <p>September 2009 - June 2014 | Country</p>
+        </div>
+      </div>
+      <!-------------------- SIDEBAR --------------------->
+      <aside class="sidebar">
+        <img
+          src="./images/port-6.jpg"
+          alt="My photo"
+          width="300px"
+          class="my-photo"
+        />
+        <!-- Contacts -->
+        <div class="contacts-container">
+          <h3 class="sidebar-title">Contacts</h3>
+          <p class="contacts-item">
+            <span class="contacts-type">C: </span
+            ><a href="tel:+388888888888" class="contacts-number"
+              >+38 888 888 88 88</a
             >
-            ................[ HTML5, CSS3 ]
-          </li>
-          <li>
-            <a href="https://cryptohub.p.goit.global/"
-              >https://cryptohub.p.goit.global/</a
-            >..................[ JavaScript ]
-          </li>
-          <li>
-            <a href=" https://kidslike.p.goit.global/">
-              https://kidslike.p.goit.global/</a
-            >...................[ React.js, Node.js ]
-          </li>
-        </ol>
-      </section>
-      <!-- Section Work Experience -->
-      <section>
-        <h2>Work Experience</h2>
-        <div>
-          <!-- First Job -->
-          <h3>Front-End Developer Freelance</h3>
-          <p>September 2019 - up to now | Country</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+          </p>
+          <p class="contacts-item">
+            <span class="contacts-type">E: </span>
+            <a href="mailto:t.goitinskiy@gmail.com" class="contacts-mail"
+              >t.goitinskiy@gmail.com</a
+            >
+          </p>
+        </div>
+        <!-- Tech Skills -->
+        <div class="tech-skills-container">
+          <h3 class="sidebar-title">Tech Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-list-text">HTML5</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">CSS3</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">GIT</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">WebPack</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">JavaScript</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">React.js</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Node.js</span>
+            </li>
           </ul>
         </div>
-        <!-- Second Job -->
-        <div>
-          <h3>Manager Banderogusak & Co.</h3>
-          <p>March 2015 - October 2018 | Country</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+        <!-- Soft Skills -->
+        <div class="soft-skills-container">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-list-item">
+              <span class="skills-list-text">Scrum</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Agile</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">GTD</span>
+            </li>
+            <li class="skills-list-item">
+              <span class="skills-list-text">Teamwork</span>
+            </li>
           </ul>
         </div>
-        <!-- Third Jpb Job -->
-        <div>
-          <h3>Manager BestUA Corp.</h3>
-          <p>June 2014 - February 2015 | Country</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h2>Education</h2>
-        <h3>National University of Management</h3>
-        <h4>Management</h4>
-        <p>September 2009 - June 2014 | Country</p>
-      </section>
-    </main>
-    <footer>
-      <img src="./images/port-6.jpg" alt="My photo" />
-      <address>
-        <a href="tel:+388888888888">+38 888 888 88 88</a> <br />
-        <a href="mailto:t.goitinskiy@gmail.c">t.goitinskiy@gmail.c</a>
-      </address>
-      <div>
-        <h2>Tech Skills</h2>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>GIT</li>
-          <li>WebPack</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Node.js</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Soft Skills</h2>
-        <ul>
-          <li>Scrum</li>
-          <li>Agile</li>
-          <li>GTD</li>
-          <li>Teamwork</li>
-        </ul>
-      </div>
-    </footer>
+      </aside>
+    </div>
   </body>
 </html>
